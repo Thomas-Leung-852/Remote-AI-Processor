@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1220 640"
+   width="1220"
+   height="640"
+   font-family="'Segoe UI', system-ui, sans-serif"
+   version="1.1"
+   id="svg93"
+   sodipodi:docname="architecture_v2.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview93"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="1.8234375"
+     inkscape:cx="464.50728"
+     inkscape:cy="378.13196"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg93">
+    <sodipodi:guide
+       position="223.2048,242.39931"
+       orientation="1,0"
+       id="guide93"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="899.94859,269.27164"
+       orientation="1,0"
+       id="guide97"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <!-- Background -->
+  <rect
+     width="1219.7429"
+     height="640"
+     fill="#0d1117"
+     rx="12.19743"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.00819" />
+  <!-- ══ TITLE ══ -->
+  <text
+     x="600"
+     y="32"
+     text-anchor="middle"
+     fill="#c9d1d9"
+     font-size="15px"
+     font-weight="700"
+     id="text1">Remote AI Processor — Architecture</text>
+  <text
+     x="600"
+     y="50"
+     text-anchor="middle"
+     fill="#444c56"
+     font-size="10px"
+     id="text2">A self-hosted AI gateway for home networks · no cloud · no subscription · data stays local</text>
+  <!-- ══════════════════════════════════════════════════════
+       ZONE: CLIENT  x=14 w=186
+  ══════════════════════════════════════════════════════ -->
+  <rect
+     x="13.985105"
+     y="63.985104"
+     width="186.02979"
+     height="489.86484"
+     rx="10.001601"
+     fill="#161b22"
+     stroke="#1f6feb"
+     stroke-width="1.47021"
+     id="rect2" />
+  <rect
+     x="14"
+     y="64"
+     width="186"
+     height="30"
+     rx="10"
+     fill="#1f6feb"
+     id="rect3" />
+  <rect
+     x="14"
+     y="82"
+     width="186"
+     height="12"
+     fill="#1f6feb"
+     id="rect4" />
+  <text
+     x="107"
+     y="84"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="700"
+     id="text4">Client</text>
+  <text
+     x="107"
+     y="108"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text5">RPi · NUC · any Node.js app</text>
+  <rect
+     x="28"
+     y="116"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect5" />
+  <text
+     x="107"
+     y="130"
+     text-anchor="middle"
+     fill="#79c0ff"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text6">client.js (ESM / CJS)</text>
+  <text
+     x="107"
+     y="156"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     font-weight="600"
+     letter-spacing="0.5"
+     id="text7">REQUESTS</text>
+  <rect
+     x="28"
+     y="162"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect7" />
+  <text
+     x="34"
+     y="176"
+     fill="#79c0ff"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text8">POST</text>
+  <text
+     x="70"
+     y="176"
+     fill="#c9d1d9"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text9">/process</text>
+  <rect
+     x="28"
+     y="188"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect9" />
+  <text
+     x="34"
+     y="202"
+     fill="#79c0ff"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text10">POST</text>
+  <text
+     x="70"
+     y="202"
+     fill="#c9d1d9"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text11">/process/batch</text>
+  <rect
+     x="28"
+     y="214"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect11" />
+  <text
+     x="34"
+     y="228"
+     fill="#79c0ff"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text12">POST</text>
+  <text
+     x="70"
+     y="228"
+     fill="#c9d1d9"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text13">/embed</text>
+  <rect
+     x="28"
+     y="240"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect13" />
+  <text
+     x="34"
+     y="254"
+     fill="#56d364"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text14">GET</text>
+  <text
+     x="62"
+     y="254"
+     fill="#c9d1d9"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text15">/health</text>
+  <rect
+     x="28"
+     y="266"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect15" />
+  <text
+     x="34"
+     y="280"
+     fill="#56d364"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text16">GET</text>
+  <text
+     x="62"
+     y="280"
+     fill="#c9d1d9"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text17">/jobs · /analytics</text>
+  <rect
+     x="28"
+     y="292"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect17" />
+  <text
+     x="34"
+     y="306"
+     fill="#f47067"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text18">DEL</text>
+  <text
+     x="58"
+     y="306"
+     fill="#c9d1d9"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text19">/job/:id</text>
+  <rect
+     x="28"
+     y="318"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect19" />
+  <text
+     x="34"
+     y="332"
+     fill="#79c0ff"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text20">POST</text>
+  <text
+     x="70"
+     y="332"
+     fill="#c9d1d9"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text21">/queue/flush</text>
+  <text
+     x="107"
+     y="358"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     font-weight="600"
+     letter-spacing="0.5"
+     id="text22">RESPONSES</text>
+  <rect
+     x="28"
+     y="364"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect22" />
+  <text
+     x="34"
+     y="378"
+     fill="#f0883e"
+     font-size="10px"
+     id="text23">SSE</text>
+  <text
+     x="56"
+     y="378"
+     fill="#8b949e"
+     font-size="10px"
+     id="text24">streaming tokens</text>
+  <rect
+     x="28"
+     y="390"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect24" />
+  <text
+     x="34"
+     y="404"
+     fill="#f0883e"
+     font-size="10px"
+     id="text25">JSON</text>
+  <text
+     x="60"
+     y="404"
+     fill="#8b949e"
+     font-size="10px"
+     id="text26">full result / vectors</text>
+  <rect
+     x="28"
+     y="424"
+     width="158"
+     height="34"
+     rx="5"
+     fill="#21262d"
+     stroke="#f0883e"
+     stroke-width="1"
+     stroke-dasharray="3, 2"
+     id="rect26" />
+  <text
+     x="107"
+     y="438"
+     text-anchor="middle"
+     fill="#f0883e"
+     font-size="9px"
+     font-weight="600"
+     id="text27">x-api-key header</text>
+  <text
+     x="107"
+     y="451"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="9px"
+     id="text28">optional shared secret</text>
+  <rect
+     x="28"
+     y="466"
+     width="158"
+     height="20"
+     rx="4"
+     fill="#21262d"
+     id="rect28" />
+  <text
+     x="107"
+     y="480"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="9px"
+     id="text29">HTTPS · self-signed TLS · LAN</text>
+  <!-- ══════════════════════════════════════════════════════
+       ZONE: AI PROCESSOR  x=210 w=640
+  ══════════════════════════════════════════════════════ -->
+  <rect
+     x="209.98564"
+     y="63.985641"
+     width="640.02869"
+     height="490.63931"
+     rx="10.000448"
+     fill="#161b22"
+     stroke="#e6963a"
+     stroke-width="1.47129"
+     id="rect29" />
+  <rect
+     x="210"
+     y="64"
+     width="640"
+     height="30"
+     rx="10"
+     fill="#e6963a"
+     id="rect30" />
+  <rect
+     x="210"
+     y="82"
+     width="640"
+     height="12"
+     fill="#e6963a"
+     id="rect31" />
+  <text
+     x="530"
+     y="84"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="700"
+     id="text31">AI Processor (server.js · Express · Node.js 22+)</text>
+  <!-- logger bar -->
+  <rect
+     x="224"
+     y="104"
+     width="612"
+     height="22"
+     rx="5"
+     fill="#21262d"
+     stroke="#444c56"
+     stroke-width="1"
+     id="rect32" />
+  <text
+     x="530"
+     y="119"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text32">logger.js — structured logging · LOG_FORMAT = pretty | json · LOG_LEVEL = debug | info | warn | error</text>
+  <!-- ── LLM Queue  x=224 w=360 ── -->
+  <rect
+     x="224"
+     y="136"
+     width="360"
+     height="66"
+     rx="7"
+     fill="#21262d"
+     stroke="#e6963a"
+     stroke-width="1.5"
+     id="rect33" />
+  <text
+     x="404"
+     y="156"
+     text-anchor="middle"
+     fill="#e6963a"
+     font-size="11px"
+     font-weight="700"
+     id="text33">LLM Queue (p-queue)</text>
+  <text
+     x="404"
+     y="172"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text34">CONCURRENCY = 4 · handles /process and /process/batch</text>
+  <text
+     x="404"
+     y="188"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text35">AbortController · per-job cancel · timeout 10 min</text>
+  <!-- ── Express Queue  x=596 w=240 ── -->
+  <rect
+     x="596"
+     y="136"
+     width="240"
+     height="66"
+     rx="7"
+     fill="#21262d"
+     stroke="#3b82f6"
+     stroke-width="1.5"
+     id="rect35" />
+  <text
+     x="716"
+     y="156"
+     text-anchor="middle"
+     fill="#3b82f6"
+     font-size="11px"
+     font-weight="700"
+     id="text36">Express Queue (p-queue)</text>
+  <text
+     x="716"
+     y="172"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text37">CONCURRENCY_EXPRESS = 8</text>
+  <text
+     x="716"
+     y="188"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text38">/embed only · never blocked by LLM</text>
+  <!-- arrow: LLM Queue → Mode Router -->
+  <line
+     x1="404"
+     y1="202"
+     x2="404"
+     y2="220"
+     stroke="#e6963a"
+     stroke-width="2"
+     marker-end="url(#aOrange)"
+     id="line38" />
+  <!-- arrow: Express Queue → Embed Adapter -->
+  <line
+     x1="716"
+     y1="202"
+     x2="716"
+     y2="220"
+     stroke="#3b82f6"
+     stroke-width="2"
+     marker-end="url(#aBlue)"
+     id="line39" />
+  <!-- ── llm.js / Mode Router  x=224 w=360 ── -->
+  <!-- thinking row -->
+  <!-- coder row -->
+  <!-- general row -->
+  <rect
+     x="224.05844"
+     y="222.05844"
+     width="359.88312"
+     height="146.44868"
+     rx="6.9977274"
+     fill="#21262d"
+     stroke="#e6963a"
+     stroke-width="1.61688"
+     id="rect39" />
+  <text
+     x="404"
+     y="242"
+     text-anchor="middle"
+     fill="#e6963a"
+     font-size="11px"
+     font-weight="700"
+     id="text39">llm.js — Mode Router</text>
+  <rect
+     x="238"
+     y="250"
+     width="80"
+     height="22"
+     rx="4"
+     fill="#1f4b7a"
+     id="rect40" />
+  <text
+     x="278"
+     y="265"
+     text-anchor="middle"
+     fill="#79c0ff"
+     font-size="10px"
+     font-weight="600"
+     id="text40">thinking</text>
+  <line
+     x1="318"
+     y1="261"
+     x2="430"
+     y2="261"
+     stroke="#444c56"
+     stroke-width="1"
+     stroke-dasharray="4, 3"
+     id="line40" />
+  <text
+     x="436"
+     y="265"
+     fill="#8b949e"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text41">deepseek-r1:14b</text>
+  <rect
+     x="238"
+     y="280"
+     width="80"
+     height="22"
+     rx="4"
+     fill="#1a4731"
+     id="rect41" />
+  <text
+     x="278"
+     y="295"
+     text-anchor="middle"
+     fill="#56d364"
+     font-size="10px"
+     font-weight="600"
+     id="text42">coder</text>
+  <line
+     x1="318"
+     y1="291"
+     x2="430"
+     y2="291"
+     stroke="#444c56"
+     stroke-width="1"
+     stroke-dasharray="4, 3"
+     id="line42" />
+  <text
+     x="436"
+     y="295"
+     fill="#8b949e"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text43">gpt-oss:20b</text>
+  <rect
+     x="238"
+     y="310"
+     width="80"
+     height="22"
+     rx="4"
+     fill="#2d2a1f"
+     id="rect43" />
+  <text
+     x="278"
+     y="325"
+     text-anchor="middle"
+     fill="#e3b341"
+     font-size="10px"
+     font-weight="600"
+     id="text44">general</text>
+  <line
+     x1="318"
+     y1="321"
+     x2="430"
+     y2="321"
+     stroke="#444c56"
+     stroke-width="1"
+     stroke-dasharray="4, 3"
+     id="line44" />
+  <text
+     x="436"
+     y="325"
+     fill="#8b949e"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text45">llama3.2:3b</text>
+  <text
+     x="349.70694"
+     y="361.67612"
+     text-anchor="middle"
+     fill="#444c56"
+     font-size="9px"
+     id="text46">models configurable via .env · no code changes needed</text>
+  <!-- ── Embed Adapter  x=596 w=240 ── -->
+  <rect
+     x="595.96863"
+     y="221.9686"
+     width="240.06279"
+     height="115.64291"
+     rx="7.0018311"
+     fill="#21262d"
+     stroke="#3b82f6"
+     stroke-width="1.43721"
+     id="rect46" />
+  <text
+     x="716"
+     y="242"
+     text-anchor="middle"
+     fill="#3b82f6"
+     font-size="11px"
+     font-weight="700"
+     id="text47">Embed Adapter</text>
+  <rect
+     x="610"
+     y="250"
+     width="212"
+     height="20"
+     rx="4"
+     fill="#1a2744"
+     id="rect47" />
+  <text
+     x="716"
+     y="264"
+     text-anchor="middle"
+     fill="#79c0ff"
+     font-size="10px"
+     font-family="'Courier New', monospace"
+     id="text48">nomic-embed-text</text>
+  <text
+     x="716"
+     y="284"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text49">single or batch input</text>
+  <text
+     x="716"
+     y="300"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text50">returns float32 vectors</text>
+  <text
+     x="716"
+     y="316"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text51">cosine similarity ready</text>
+  <text
+     x="657.67438"
+     y="331.70694"
+     text-anchor="middle"
+     fill="#444c56"
+     font-size="9px"
+     id="text52">model configurable via .env</text>
+  <!-- arrow: Mode Router → SQLite -->
+  <line
+     x1="404"
+     y1="374.4353"
+     x2="404"
+     y2="394.02509"
+     stroke="#a855f7"
+     stroke-width="2.08645"
+     marker-end="url(#aPurple)"
+     id="line52" />
+  <!-- arrow: Embed Adapter → SQLite (diagonal) -->
+  <path
+     d="m 709.32898,338.08764 0.71164,40.27774 -176.37301,0.36906 -0.22081,19.02109"
+     fill="none"
+     stroke="#a855f7"
+     stroke-width="2.01812"
+     stroke-dasharray="5, 3"
+     marker-end="url(#aPurple)"
+     id="path52"
+     sodipodi:nodetypes="cccc" />
+  <!-- ── db.js / SQLite  x=224 w=360 ── -->
+  <g
+     id="g93"
+     transform="translate(0,36)">
+    <rect
+       x="224"
+       y="368"
+       width="360"
+       height="78"
+       rx="7"
+       fill="#21262d"
+       stroke="#a855f7"
+       stroke-width="1.5"
+       id="rect52" />
+    <text
+       x="404"
+       y="388"
+       text-anchor="middle"
+       fill="#a855f7"
+       font-size="11px"
+       font-weight="700"
+       id="text53">db.js — SQLite Job Log</text>
+    <text
+       x="404"
+       y="404"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text54">better-sqlite3 · WAL mode · prepared statements</text>
+    <text
+       x="404"
+       y="420"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text55">client_id · mode · status · elapsed_ms · error</text>
+    <text
+       x="404"
+       y="436"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text56">auto-purge after LOG_RETENTION_DAYS</text>
+  </g>
+  <!-- ── Dashboard  x=596 w=240 ── -->
+  <g
+     id="g94"
+     transform="translate(0,36)">
+    <rect
+       x="596"
+       y="368"
+       width="240"
+       height="78"
+       rx="7"
+       fill="#21262d"
+       stroke="#22c55e"
+       stroke-width="1.5"
+       id="rect56" />
+    <text
+       x="716"
+       y="388"
+       text-anchor="middle"
+       fill="#22c55e"
+       font-size="11px"
+       font-weight="700"
+       id="text57">Dashboard (Vite + React)</text>
+    <text
+       x="716"
+       y="404"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text58">served as static files from /public</text>
+    <text
+       x="716"
+       y="420"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text59">queues · jobs · memory · analytics</text>
+    <text
+       x="716"
+       y="436"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text60">per-job abort · export · 3s poll</text>
+  </g>
+  <!-- config bar -->
+  <g
+     id="g101"
+     transform="translate(0,6)">
+    <rect
+       x="224"
+       y="481.58185"
+       width="612"
+       height="22"
+       rx="5"
+       fill="#21262d"
+       stroke="#444c56"
+       stroke-width="1"
+       id="rect60" />
+    <text
+       x="530"
+       y="496.58185"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text61">config.js — all settings from .env · API_KEY · PORT · CONCURRENCY · BACKEND · MODEL_* · SSL · DB_PATH · LOG_*</text>
+  </g>
+  <!-- tls/cors bar -->
+  <g
+     id="g100"
+     transform="translate(0,2)">
+    <rect
+       x="224"
+       y="512.48499"
+       width="612"
+       height="22"
+       rx="5"
+       fill="#21262d"
+       stroke="#444c56"
+       stroke-width="1"
+       id="rect61" />
+    <text
+       x="530"
+       y="527.48499"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       id="text62">HTTPS · self-signed TLS · CORS enabled · Auth middleware (x-api-key) · static /public (dashboard)</text>
+  </g>
+  <!-- ══════════════════════════════════════════════════════
+       ZONE: BACKEND  x=862 w=322
+  ══════════════════════════════════════════════════════ -->
+  <rect
+     x="885.98682"
+     y="63.986816"
+     width="322.02637"
+     height="492.18814"
+     rx="10.000819"
+     fill="#161b22"
+     stroke="#3fb950"
+     stroke-width="1.47363"
+     id="rect62" />
+  <rect
+     x="886"
+     y="64"
+     width="322"
+     height="30"
+     rx="10"
+     fill="#3fb950"
+     id="rect63" />
+  <rect
+     x="886"
+     y="82"
+     width="322"
+     height="12"
+     fill="#3fb950"
+     id="rect64" />
+  <text
+     x="1047"
+     y="84"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="700"
+     id="text64">LLM Backend</text>
+  <text
+     x="1047"
+     y="108"
+     text-anchor="middle"
+     fill="#8b949e"
+     font-size="10px"
+     id="text65">swap via BACKEND= in .env · zero code change</text>
+  <!-- Ollama label -->
+  <rect
+     x="900"
+     y="118"
+     width="294"
+     height="26"
+     rx="5"
+     fill="#1a4731"
+     stroke="#3fb950"
+     stroke-width="1"
+     id="rect65" />
+  <text
+     x="1047"
+     y="135"
+     text-anchor="middle"
+     fill="#3fb950"
+     font-size="11px"
+     font-weight="600"
+     id="text66">Ollama (BACKEND=ollama · port 11434)</text>
+  <!-- thinking model -->
+  <g
+     id="g98"
+     transform="translate(0.193659,79.081835)">
+    <rect
+       x="900"
+       y="152"
+       width="294"
+       height="58"
+       rx="6"
+       fill="#1f4b7a"
+       stroke="#79c0ff"
+       stroke-width="1"
+       id="rect66" />
+    <text
+       x="1047"
+       y="170"
+       text-anchor="middle"
+       fill="#79c0ff"
+       font-size="10px"
+       font-weight="600"
+       id="text67">thinking</text>
+    <text
+       x="1047"
+       y="186"
+       text-anchor="middle"
+       fill="#c9d1d9"
+       font-size="10px"
+       font-family="'Courier New', monospace"
+       id="text68">deepseek-r1:14b</text>
+    <text
+       x="1047"
+       y="202"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="9px"
+       id="text69">~10 GB RAM</text>
+  </g>
+  <!-- coder model -->
+  <g
+     id="g99"
+     transform="translate(-0.3547558,84.46358)">
+    <rect
+       x="900"
+       y="218"
+       width="294"
+       height="58"
+       rx="6"
+       fill="#1a4731"
+       stroke="#56d364"
+       stroke-width="1"
+       id="rect69" />
+    <text
+       x="1047"
+       y="236"
+       text-anchor="middle"
+       fill="#56d364"
+       font-size="10px"
+       font-weight="600"
+       id="text70">coder</text>
+    <text
+       x="1047"
+       y="252"
+       text-anchor="middle"
+       fill="#c9d1d9"
+       font-size="10px"
+       font-family="'Courier New', monospace"
+       id="text71">gpt-oss:20b</text>
+    <text
+       x="1047"
+       y="268"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="9px"
+       id="text72">~14 GB RAM</text>
+  </g>
+  <!-- general model -->
+  <g
+     id="g97"
+     transform="translate(0.193659,89.845325)">
+    <rect
+       x="900"
+       y="284"
+       width="294"
+       height="58"
+       rx="6"
+       fill="#2d2a1f"
+       stroke="#e3b341"
+       stroke-width="1"
+       id="rect72" />
+    <text
+       x="1047"
+       y="302"
+       text-anchor="middle"
+       fill="#e3b341"
+       font-size="10px"
+       font-weight="600"
+       id="text73">general</text>
+    <text
+       x="1047"
+       y="318"
+       text-anchor="middle"
+       fill="#c9d1d9"
+       font-size="10px"
+       font-family="'Courier New', monospace"
+       id="text74">llama3.2:3b</text>
+    <text
+       x="1047"
+       y="334"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="9px"
+       id="text75">~4 GB RAM</text>
+  </g>
+  <!-- embed model -->
+  <g
+     id="g96"
+     transform="translate(0,-190.29991)">
+    <rect
+       x="900"
+       y="350"
+       width="294"
+       height="58"
+       rx="6"
+       fill="#1a2744"
+       stroke="#3b82f6"
+       stroke-width="1"
+       id="rect75" />
+    <text
+       x="1047"
+       y="368"
+       text-anchor="middle"
+       fill="#3b82f6"
+       font-size="10px"
+       font-weight="600"
+       id="text76">embed</text>
+    <text
+       x="1047"
+       y="384"
+       text-anchor="middle"
+       fill="#c9d1d9"
+       font-size="10px"
+       font-family="'Courier New', monospace"
+       id="text77">nomic-embed-text</text>
+    <text
+       x="1047"
+       y="400"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="9px"
+       id="text78">~0.3 GB RAM</text>
+  </g>
+  <!-- OpenAI-compatible alternative -->
+  <g
+     id="g102"
+     transform="translate(1.0968295,25.227078)">
+    <rect
+       x="900"
+       y="420"
+       width="294"
+       height="62"
+       rx="6"
+       fill="#21262d"
+       stroke="#8b949e"
+       stroke-width="1"
+       stroke-dasharray="5, 3"
+       id="rect78" />
+    <text
+       x="1047"
+       y="440"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       font-weight="600"
+       id="text79">OpenAI-compatible (BACKEND=openai)</text>
+    <text
+       x="1047"
+       y="458"
+       text-anchor="middle"
+       fill="#8b949e"
+       font-size="10px"
+       font-family="'Courier New', monospace"
+       id="text80">vLLM · LM Studio · any /v1/ server</text>
+    <text
+       x="1047"
+       y="474"
+       text-anchor="middle"
+       fill="#444c56"
+       font-size="9px"
+       id="text81">drop-in swap · no client changes needed</text>
+  </g>
+  <!-- ══════════════════════════════════════════════════════
+       ARROW MARKERS
+  ══════════════════════════════════════════════════════ -->
+  <defs
+     id="defs88">
+    <marker
+       id="aBlue"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#79c0ff"
+         id="path81" />
+    </marker>
+    <marker
+       id="aBlueL"
+       markerWidth="8"
+       markerHeight="8"
+       refX="2"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 8,0 V 6 L 0,3 Z"
+         fill="#79c0ff"
+         id="path82" />
+    </marker>
+    <marker
+       id="aOrange"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#e6963a"
+         id="path83" />
+    </marker>
+    <marker
+       id="aOrangeL"
+       markerWidth="8"
+       markerHeight="8"
+       refX="2"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 8,0 V 6 L 0,3 Z"
+         fill="#f0883e"
+         id="path84" />
+    </marker>
+    <marker
+       id="aGreen"
+       markerWidth="8"
+       markerHeight="6"
+       refX="6"
+       refY="3"
+       orient="auto"
+       viewBox="0 0 8 6"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#56d364"
+         id="path85" />
+    </marker>
+    <marker
+       id="aGreenL"
+       markerWidth="8"
+       markerHeight="8"
+       refX="2"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 8,0 V 6 L 0,3 Z"
+         fill="#56d364"
+         id="path86" />
+    </marker>
+    <marker
+       id="aPurple"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#a855f7"
+         id="path87" />
+    </marker>
+    <marker
+       id="aYellow"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#e3b341"
+         id="path88" />
+    </marker>
+    <marker
+       id="aYellow-0"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#e3b341"
+         id="path88-9" />
+    </marker>
+  </defs>
+  <!-- ══ Client ↔ Processor ══ -->
+  <!-- request → -->
+  <line
+     x1="201"
+     y1="258"
+     x2="206"
+     y2="258"
+     stroke="#79c0ff"
+     stroke-width="2"
+     marker-end="url(#aBlue)"
+     id="line88" />
+  <text
+     x="204"
+     y="252"
+     text-anchor="middle"
+     fill="#79c0ff"
+     font-size="9px"
+     font-weight="600"
+     id="text88">req</text>
+  <!-- ← response -->
+  <line
+     x1="206"
+     y1="274"
+     x2="201"
+     y2="274"
+     stroke="#f0883e"
+     stroke-width="2"
+     marker-end="url(#aOrangeL)"
+     id="line89" />
+  <path
+     d="m 585.49051,354.53924 c 1.7334,0.19623 276.12159,0.16706 278.62884,-0.22473 0,0 -0.3102,-34.2997 -0.004,-34.3084 l 16.10263,-0.45763"
+     fill="none"
+     stroke="#e3b341"
+     stroke-width="1.94841"
+     marker-end="url(#aYellow-0)"
+     id="path90-8"
+     sodipodi:nodetypes="cscc"
+     style="fill:none;stroke:#6ae341;stroke-width:1.94562;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#aGreen)" />
+  <text
+     x="204"
+     y="288"
+     text-anchor="middle"
+     fill="#f0883e"
+     font-size="9px"
+     font-weight="600"
+     id="text89">res</text>
+  <!-- ══ Mode Router → Backend ══ -->
+  <!-- → thinking (arc up) -->
+  <path
+     d="m 585.64037,347.6469 c 97.52833,0 270.9763,0.75576 270.42788,-0.47479 l -0.49026,-94.07262 25.83958,-0.45432"
+     fill="none"
+     stroke="#79c0ff"
+     stroke-width="2.00194"
+     marker-end="url(#aBlue)"
+     id="path89"
+     sodipodi:nodetypes="cccc" />
+  <!-- → coder (straight) -->
+  <!-- → general (arc down) -->
+  <path
+     d="m 585.4289,362.96143 270.56595,-0.80657 0.0512,20.04452 24.72494,0.30362"
+     fill="none"
+     stroke="#e3b341"
+     stroke-width="1.94612"
+     marker-end="url(#aYellow)"
+     id="path90"
+     sodipodi:nodetypes="cccc" />
+  <!-- ══ Embed Adapter → Embed Model ══ -->
+  <path
+     d="m 836.69114,226.95475 c 7.2488,-4.56739 31.14961,-23.1596 45.17906,-34.37495"
+     fill="none"
+     stroke="#3b82f6"
+     stroke-width="2.48224"
+     stroke-dasharray="6, 3"
+     marker-end="url(#aBlue)"
+     id="path91"
+     sodipodi:nodetypes="cc" />
+  <!-- ══ Tokens return (bottom arc) ══ -->
+  <path
+     d="m 1029.3331,559.15536 c 0.2934,6.81669 -0.1091,27.73184 -0.1091,36.61738 l -499.13126,1.61546 -0.54921,-56.3734"
+     fill="none"
+     stroke="#56d364"
+     stroke-width="1.64041"
+     stroke-dasharray="6, 3"
+     marker-end="url(#aGreen)"
+     id="path92"
+     sodipodi:nodetypes="cccc" />
+  <text
+     x="690"
+     y="587"
+     text-anchor="middle"
+     fill="#56d364"
+     font-size="10px"
+     font-weight="600"
+     id="text92">tokens / vectors streamed back</text>
+  <!-- ══ FOOTER ══ -->
+  <text
+     x="600"
+     y="628"
+     text-anchor="middle"
+     fill="#444c56"
+     font-size="10px"
+     id="text93">Originally built for Housekeeper Bee · Raspberry Pi 5 4GB → Windows PC 32GB · private LAN · no cloud</text>
+</svg>

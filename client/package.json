@@ -1,0 +1,17 @@
+{
+  "name": "remote-ai-client",
+  "version": "1.0.0",
+  "description": "Standalone test client for Remote AI Processor — runs on Raspberry Pi or any Node.js device",
+  "type": "module",
+  "scripts": {
+    "coder":      "node examples/coder.js",
+    "report":     "node examples/report.js",
+    "concurrent": "node examples/concurrent.js",
+     "embed":     "node ./examples/test-embed.js",
+    "health":     "node -e \"import('./client.js').then(m => m.checkHealth()).then(console.log)\""
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "undici": "^6.21.0"
+  }
+}

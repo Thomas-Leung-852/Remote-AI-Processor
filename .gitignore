@@ -1,0 +1,12 @@
+node_modules/
+dist/
+processor/data/
+.env
+.env.local
+.DS_Store
+*.log
+*.pem
+*.db
+certs/
+test_plan.md
+
