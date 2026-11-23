@@ -2,6 +2,15 @@
 
 ---
 
+## v1.0.1      
+2026/11/23
+
+### dashboard
+- Added 'Configured Models' card
+- Fixed UI/UX inconsistent and misleading color and message
+
+---
+
 ## v1.0.0 — Initial release      
 2026/11/21
 
