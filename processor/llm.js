@@ -7,7 +7,7 @@
 //   openai  → OpenAI-compatible — vLLM, LM Studio, llama.cpp, OpenAI API
 //
 // Usage in server.js:
-//   import { streamChat, embedText, listModels, getLoadedModels } from './llm.js';
+//   import { streamChat, embedText, listModels, getLoadedModels, selectModel } from './llm.js';
 //
 // To switch backend: set BACKEND=openai in processor/.env
 
@@ -29,6 +29,26 @@ if (config.backend === 'openai') {
 }
 
 console.log(`[llm] backend: ${config.backend}`);
+
+// ─── Mode → model resolver ────────────────────────────────────────────────────
+/**
+ * Map a request mode string to the configured model name.
+ * Add new modes here — server.js never needs to change.
+ *
+ * @param {string} mode  — e.g. 'thinking' | 'thinking-small' | 'coder' | 'coder-small' | 'default'
+ * @returns {string}     — model name, e.g. 'deepseek-r1:7b'
+ */
+export function selectModel(mode) {
+  const m = config.models;
+  switch (mode) {
+    case 'thinking':       return m.thinking;
+    case 'thinking-small': return m.thinkingSmall;
+    case 'coder':          return m.coder;
+    case 'coder-small':    return m.coderSmall;
+    case 'embed':          return m.embed;
+    default:               return m.default;
+  }
+}
 
 // ─── Unified exports ──────────────────────────────────────────────────────────
 

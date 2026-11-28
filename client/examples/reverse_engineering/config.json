@@ -1,0 +1,19 @@
+{
+  "reverseEngineer": {
+    "generateModel": "thinking",
+    "verifyModel": "default",
+    "distilModel": "thinking",
+    "refinePasses": 1,
+    "outputLanguage": "en",
+    "supportedLanguages": {
+      "en": "English",
+      "zh-TW": "Traditional Chinese",
+      "zh-CN": "Simplified Chinese",
+      "ja": "Japanese",
+      "ko": "Korean",
+      "fr": "French",
+      "de": "German",
+      "es": "Spanish"
+    }
+  }
+}

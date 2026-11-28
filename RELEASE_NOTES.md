@@ -1,4 +1,15 @@
 # Release Notes — Remote AI Processor
+---
+
+## v1.1.0      
+2026/11/28
+
+### client 
+- Added new example :: prompt inversion (prompt reverse engineering) and LLM chaining to create a report description from JSX source code.
+
+### Processor
+
+- support thinking-small and coder-small AI models (below 12B Q4_K_M)
 
 ---
 

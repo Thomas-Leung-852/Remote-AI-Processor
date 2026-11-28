@@ -9,7 +9,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { config } from './config.js';
 import { logger } from './logger.js';
-import { streamChat, embedText, listModels, getLoadedModels, activeBackend } from './llm.js';
+import { streamChat, embedText, listModels, getLoadedModels, activeBackend, selectModel } from './llm.js';
 import { logJobQueued, logJobStarted, logJobFinished, queryJobs, queryStats, queryAnalytics } from './db.js';
 import {
   queue, expressQueue,
@@ -89,7 +89,7 @@ app.get('/api/v1/health', async (req, res) => {
 //
 // Request body:
 // {
-//   "mode":         "thinking" | "coder" | "default",
+//   "mode":         "thinking" | "thinking-small" | "coder" | "coder-small" | "default",
 //   "userPrompt":   "...",
 //   "systemPrompt": "...",          // optional
 //   "model":        "llama3.2:3b",  // optional override
@@ -113,7 +113,7 @@ app.post('/api/v1/process', authMiddleware, async (req, res) => {
 
   const jobId    = randomUUID();
   const clientId = req.headers['x-client-id'] ?? 'unknown';
-  const model    = modelOverride ?? config.models[mode] ?? config.models.default;
+  const model    = modelOverride ?? selectModel(mode);
 
   registerJob(jobId, { clientId, mode, model, startedAt: null });
   logJobQueued({ jobId, clientId, clientIp: req.ip, mode, model, backend: activeBackend, userPrompt });
@@ -193,7 +193,7 @@ app.post('/api/v1/process/batch', authMiddleware, async (req, res) => {
 
   const jobId    = randomUUID();
   const clientId = req.headers['x-client-id'] ?? 'unknown';
-  const model    = modelOverride ?? config.models[mode] ?? config.models.default;
+  const model    = modelOverride ?? selectModel(mode);
   registerJob(jobId, { clientId, mode, model });
   logJobQueued({ jobId, clientId, clientIp: req.ip, mode, model, backend: activeBackend, userPrompt });
 

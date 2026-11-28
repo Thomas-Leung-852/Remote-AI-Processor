@@ -28,10 +28,12 @@ export const config = {
 
   // ── Model assignments per mode ──────────────────────────────────────────────
   models: {
-    thinking: process.env.MODEL_THINKING || 'deepseek-r1:14b',
-    coder:    process.env.MODEL_CODER    || 'gpt-oss:20b',
-    default:  process.env.MODEL_DEFAULT  || 'llama3.2:3b',
-    embed:    process.env.MODEL_EMBED    || 'nomic-embed-text',
+    thinking:      process.env.MODEL_THINKING       || 'deepseek-r1:14b',
+    thinkingSmall: process.env.MODEL_THINKING_SMALL || 'deepseek-r1:7b',
+    coder:         process.env.MODEL_CODER          || 'qwen2.5-coder:32b',
+    coderSmall:    process.env.MODEL_CODER_SMALL    || 'qwen2.5-coder:7b',
+    default:       process.env.MODEL_DEFAULT        || 'llama3.2:3b',
+    embed:         process.env.MODEL_EMBED          || 'nomic-embed-text',
   },
 
   // ── Queue ───────────────────────────────────────────────────────────────────
